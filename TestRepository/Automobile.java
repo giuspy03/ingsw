@@ -6,7 +6,8 @@ public class Automobile {
     }
 
     void setProprietario(Persona p){
-        this.proprietario=p;
+        if(p!=null)
+            this.proprietario=p;
     }
 
 }

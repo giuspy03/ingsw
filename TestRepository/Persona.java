@@ -9,9 +9,11 @@ public class Persona {
     }
 
     public void addAuto(Automobile a){
-        Automobile automobile = new Automobile();
-        automobile.setProprietario(this);
-        this.auto.add(a);
+        if(a!=null){
+            Automobile automobile = new Automobile();
+            automobile.setProprietario(this);
+            this.auto.add(a);
+        }
     }
 
 }
