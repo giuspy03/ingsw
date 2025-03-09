@@ -5,7 +5,11 @@ public class Automobile {
         return this.proprietario;
     }
 
-    void setProprietario(Persona p){
+    protected void clearProprietario(){
+        this.proprietario=null;
+    }
+
+    protected void setProprietario(Persona p){
         if(p!=null)
             this.proprietario=p;
     }
